@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+          $(document).ready(function() {
+            $('#search-input').on('input', function() {
+              var query = $(this).val();
+              if (query.length >= 2) {
+                $.ajax({
+                  url: 'search.php',
+                  type: 'post',
+                  data: {query: query},
+                  success: function(response) {
+                    $('#search-results').html(response);
+                  }
+                });
+              }
+            });
+          });
+        </script>
+    </head>
+    <body>
+        <input type="text" id="search-input" placeholder="Search...">
+        <div id="search-results"></div>
+        <form name="loginForm" onsubmit="return validateForm()">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+    
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+    
+            <input type="submit" value="Login">
+<style>
+    body{background-image:url(https://www.google.com/imgres?imgurl=https%3A%2F%2Fold.ucu.ac.ug%2Fimages%2F2018%2F02%2F13%2Fbeautiful_ucu.jpg&tbnid=gauC8FBYT5YdlM&vet=12ahUKEwj6_e3Pgej-AhXVpycCHd5eDxEQMygHegUIARDsAQ..i&imgrefurl=https%3A%2F%2Fold.ucu.ac.ug%2Findex.php%2Fabout%2Fvisit%2Fexplore-ucu&docid=ArX6vIb5g6r8WM&w=527&h=275&q=ucu&ved=2ahUKEwj6_e3Pgej-AhXVpycCHd5eDxEQMygHegUIARDsAQ");}
+    .fa-twitter{color:aqua;}
+    .fa-youtube{color:red;}
+    .fa-facebook{color:blue;}
+    .fa-whatsapp{color:green ;}
+    .fa-instagram{color:rgb(165, 42, 122);}
+    .fa-whatsapp:hover{color:gray;}
+    h1{text-shadow:5px 5px 5px gray;
+    }
+    h1:hover{box-shadow: 5px 5px 5px black;}
+    h1:active{color:brown;}
+</style>
+<script src="https://kit.fontawesome.com/8b9c518c72.js" crossorigin="anonymous"></script>
+<script src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fold.ucu.ac.ug%2Fimages%2F2018%2F02%2F13%2Fbeautiful_ucu.jpg&tbnid=gauC8FBYT5YdlM&vet=12ahUKEwj6_e3Pgej-AhXVpycCHd5eDxEQMygHegUIARDsAQ..i&imgrefurl=https%3A%2F%2Fold.ucu.ac.ug%2Findex.php%2Fabout%2Fvisit%2Fexplore-ucu&docid=ArX6vIb5g6r8WM&w=527&h=275&q=ucu&ved=2ahUKEwj6_e3Pgej-AhXVpycCHd5eDxEQMygHegUIARDsAQ"></script>
+    </head>
+    <body>
+       <h1>WELCOME TO MY WEBSITE</h1> 
+       
+       <i class="fa-sharp fa-solid fa-house"></i>
+       <a href="https://twitter.com">
+       <i class="fa-brands fa-twitter"></i>
+    </a>
+       <a href="https://youtube.com">
+        <i class="fa-brands fa-youtube fa-2xl"></i>
+    </a>
+    <a href="https://facebook.com">
+        <i class="fa-brands fa-facebook fa-2xl"></i>
+    </a>
+    <a href="https://whatsapp.com">
+    <i class="fa-brands fa-whatsapp"></i>
+    <a href="https://instagram.com">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+</a>
+    </body>
+
+</html>
+

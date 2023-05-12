@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>this is my website</title>
+        <link rel="stylesheet" href="style.html">
+    </head>
+
+    <body>
+        <h1>This my website</h1>
+        <p>gffhgjjgjgjkfkgkglhlbklbkjkhkjhkhhlhkhkhkhkhgfgffhghghhvbvv vbvbbnbngn</p>
+        <p>gffhgjjgjgjkfkgkglhlbklbkjkhkjhkhhlhkhkhkhkhgfgffhghghhvbvv vbvbbnbngn</p>
+        <p>gffhgjjgjgjkfkgkglhlbklbkjkhkjhkhhlhkhkhkhkhgfgffhghghhvbvv vbvbbnbngn</p>
+        <p>gffhgjjgjgjkfkgkglhlbklbkjkhkjhkhhlhkhkhkhkhgfgffhghghhvbvv vbvbbnbngn</p>
+        <p>gffhgjjgjgjkfkgkglhlbklbkjkhkjhkhhlhkhkhkhkhgfgffhghghhvbvv vbvbbnbngn</p>
+    </body>
+</html>
